@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Models and checkpoints
+models/
+checkpoints/
+outputs/
+wandb/
+
+# Private and raw data
+data/raw/*
+data/private/
+
+# Keep empty raw directory
+!data/raw/.gitkeep
+
+# Large model files
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.gguf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
