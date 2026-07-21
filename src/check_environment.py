@@ -1,50 +1,64 @@
-"""Check the local training environment and GPU availability."""
+"""Check Python, AI packages, and CUDA GPU availability."""
 
 import platform
 import sys
+from importlib.metadata import PackageNotFoundError, version
 
-import accelerate
-import bitsandbytes
-import datasets
-import peft
 import torch
-import transformers
-import trl
+
+
+PACKAGES = [
+    "numpy",
+    "torch",
+    "transformers",
+    "datasets",
+    "accelerate",
+    "peft",
+    "trl",
+    "bitsandbytes",
+    "sentencepiece",
+    "safetensors",
+]
+
+
+def package_version(package_name: str) -> str:
+    """Return the installed version of a package."""
+    try:
+        return version(package_name)
+    except PackageNotFoundError:
+        return "not installed"
 
 
 def main() -> None:
-    """Print package, Python, and GPU information."""
-    print("=" * 50)
+    print("=" * 55)
     print("Polymer Tutor Mini - Environment Check")
-    print("=" * 50)
+    print("=" * 55)
 
     print(f"Operating system: {platform.platform()}")
     print(f"Python: {sys.version.split()[0]}")
-    print(f"PyTorch: {torch.__version__}")
-    print(f"Transformers: {transformers.__version__}")
-    print(f"Datasets: {datasets.__version__}")
-    print(f"Accelerate: {accelerate.__version__}")
-    print(f"PEFT: {peft.__version__}")
-    print(f"TRL: {trl.__version__}")
-    print(f"BitsAndBytes: {bitsandbytes.__version__}")
 
-    cuda_available = torch.cuda.is_available()
-    print(f"CUDA available: {cuda_available}")
+    print("\nInstalled packages:")
+    for package in PACKAGES:
+        print(f"  {package}: {package_version(package)}")
 
-    if not cuda_available:
-        raise RuntimeError("CUDA GPU was not detected by PyTorch.")
+    print("\nGPU information:")
+    print(f"  CUDA available: {torch.cuda.is_available()}")
+    print(f"  PyTorch CUDA runtime: {torch.version.cuda}")
 
-    print(f"CUDA runtime: {torch.version.cuda}")
-    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    if not torch.cuda.is_available():
+        raise RuntimeError("PyTorch cannot access an NVIDIA GPU.")
 
-    total_memory = torch.cuda.get_device_properties(0).total_memory
-    print(f"GPU memory: {total_memory / 1024**3:.2f} GB")
+    gpu_index = torch.cuda.current_device()
+    gpu_properties = torch.cuda.get_device_properties(gpu_index)
 
-    test_tensor = torch.randn(1024, 1024, device="cuda")
-    result = test_tensor @ test_tensor
+    print(f"  GPU: {torch.cuda.get_device_name(gpu_index)}")
+    print(f"  GPU memory: {gpu_properties.total_memory / 1024**3:.2f} GB")
 
-    print(f"Test tensor device: {result.device}")
-    print("Environment check passed successfully.")
+    x = torch.randn(1024, 1024, device="cuda")
+    result = x @ x
+
+    print(f"  Test tensor device: {result.device}")
+    print("\nEnvironment check passed successfully.")
 
 
 if __name__ == "__main__":
