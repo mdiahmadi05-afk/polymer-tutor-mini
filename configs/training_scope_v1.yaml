@@ -1,0 +1,101 @@
+project:
+  name: polymer-tutor-mini
+  version: v1
+  language: fa
+  target_level: undergraduate
+  goal: >
+    ساخت یک مدرس فارسی علوم و مهندسی پلیمر که مفاهیم پایه را
+    دقیق، روشن و بدون اطلاعات ساختگی توضیح دهد.
+
+included_topics:
+  polymer_basics:
+    target_samples: 70
+    topics:
+      - پلیمر، مونومر و واحد تکرارشونده
+      - درشت‌مولکول
+      - درجه پلیمریزاسیون
+      - پلیمر طبیعی و مصنوعی
+      - هموپلیمر و کوپلیمر
+      - ترموپلاستیک، ترموست و الاستومر
+      - علت نداشتن نقطه جوش مشخص
+
+  chain_structure:
+    target_samples: 90
+    topics:
+      - زنجیر خطی، شاخه‌دار و شبکه‌ای
+      - اتصال عرضی
+      - انعطاف‌پذیری زنجیر
+      - گروه‌های جانبی حجیم
+      - چرخش حول پیوندها
+      - ایزوتاکتیک، سیندیوتاکتیک و آتاکتیک
+
+  molecular_weight:
+    target_samples: 90
+    topics:
+      - Mn، Mw و Mv
+      - شاخص پراکندگی
+      - توزیع وزن مولکولی
+      - درجه پلیمریزاسیون متوسط
+      - رابطه مارک–هووینک
+      - اثر وزن مولکولی بر خواص
+      - محاسبات ساده
+
+  morphology:
+    target_samples: 90
+    topics:
+      - پلیمر آمورف
+      - پلیمر نیمه‌بلوری
+      - درجه بلورینگی
+      - عوامل مؤثر بر بلورینگی
+      - اثر شاخه‌دارشدن و تاکتیسیته
+      - مقایسه HDPE و LDPE
+      - اثر بلورینگی بر خواص
+
+  thermal_behavior:
+    target_samples: 90
+    topics:
+      - دمای انتقال شیشه‌ای Tg
+      - دمای ذوب Tm
+      - تفاوت Tg و Tm
+      - حالت شیشه‌ای و لاستیکی
+      - اثر ساختار بر Tg
+      - اثر نرم‌کننده و اتصال عرضی
+      - ذوب، نرم‌شدن و تخریب حرارتی
+
+  structure_property:
+    target_samples: 120
+    topics:
+      - رابطه ساختار و خواص
+      - اثر شاخه بر بلورینگی و چگالی
+      - اثر اتصال عرضی بر مدول و تورم
+      - اثر وزن مولکولی بر ویسکوزیته
+      - رفتار پلی‌استایرن در دمای اتاق
+      - پیش‌بینی خواص از روی ساختار
+      - اصلاح عبارت‌های علمی نادرست
+
+sample_types:
+  - definition
+  - comparison
+  - explanation
+  - effect_prediction
+  - error_correction
+  - example
+  - step_by_step_calculation
+  - short_answer
+  - detailed_answer
+
+excluded_topics_v1:
+  - سینتیک پیشرفته پلیمریزاسیون
+  - رئولوژی پیشرفته
+  - ترمودینامیک محلول‌های پلیمری
+  - فلوری–هاگینز
+  - جدایش فازی و Spinodal و Binodal
+  - روش‌های شناسایی پیشرفته
+  - فرایندهای اکستروژن و تزریق
+  - کامپوزیت‌ها و بازیافت پیشرفته
+
+dataset:
+  target_total_samples: 550
+  train_ratio: 0.90
+  validation_ratio: 0.10
+  evaluation_questions_must_be_excluded: true
