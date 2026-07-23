@@ -1,0 +1,30 @@
+{"id":"poly_001","level":"basic","type":"definition","category":"polymer_basics","prompt":"پلیمر چیست؟"}
+{"id":"poly_002","level":"basic","type":"definition","category":"polymer_basics","prompt":"مونومر چیست و چه ارتباطی با پلیمر دارد؟"}
+{"id":"poly_003","level":"basic","type":"example","category":"polymer_basics","prompt":"یک مثال از پلیمر طبیعی و یک مثال از پلیمر مصنوعی بزن."}
+{"id":"poly_004","level":"basic","type":"explanation","category":"thermal_behavior","prompt":"چرا پلیمرها معمولاً دمای جوش مشخصی ندارند؟"}
+{"id":"poly_005","level":"basic","type":"definition","category":"morphology","prompt":"پلیمر آمورف چیست؟"}
+{"id":"poly_006","level":"basic","type":"definition","category":"morphology","prompt":"پلیمر بلوری یا نیمه‌بلوری چیست؟"}
+{"id":"poly_007","level":"basic","type":"definition","category":"polymer_structure","prompt":"اتصال عرضی در پلیمر چیست؟"}
+{"id":"poly_008","level":"basic","type":"comparison","category":"thermal_behavior","prompt":"تفاوت کلی پلیمرهای ترموپلاستیک و ترموست چیست؟"}
+{"id":"poly_009","level":"basic","type":"comparison","category":"polymer_structure","prompt":"تفاوت هموپلیمر و کوپلیمر چیست؟"}
+{"id":"poly_010","level":"basic","type":"definition","category":"polymerization","prompt":"پلیمریزاسیون چیست؟"}
+{"id":"poly_011","level":"intermediate","type":"comparison","category":"molecular_weight","prompt":"تفاوت وزن مولکولی متوسط عددی Mn، متوسط وزنی Mw و متوسط ویسکوزی Mv چیست؟"}
+{"id":"poly_012","level":"intermediate","type":"definition","category":"molecular_weight","prompt":"شاخص پراکندگی PDI چیست و چه اطلاعاتی درباره توزیع وزن مولکولی می‌دهد؟"}
+{"id":"poly_013","level":"intermediate","type":"definition","category":"thermal_properties","prompt":"دمای انتقال شیشه‌ای Tg چیست؟"}
+{"id":"poly_014","level":"intermediate","type":"comparison","category":"thermal_properties","prompt":"دمای انتقال شیشه‌ای Tg و دمای ذوب Tm چه تفاوتی دارند؟"}
+{"id":"poly_015","level":"intermediate","type":"effect_prediction","category":"molecular_weight","prompt":"افزایش وزن مولکولی چه اثری بر ویسکوزیته مذاب و خواص مکانیکی پلیمر دارد؟"}
+{"id":"poly_016","level":"intermediate","type":"effect_prediction","category":"chain_flexibility","prompt":"گروه‌های جانبی حجیم چه اثری بر انعطاف‌پذیری زنجیر و دمای انتقال شیشه‌ای پلیمر دارند؟"}
+{"id":"poly_017","level":"intermediate","type":"effect_prediction","category":"branching","prompt":"شاخه‌دار شدن زنجیر پلیمر چه اثری بر نظم زنجیرها، بلورینگی و چگالی دارد؟"}
+{"id":"poly_018","level":"intermediate","type":"effect_prediction","category":"crosslinking","prompt":"افزایش چگالی اتصالات عرضی چه اثری بر مدول، انعطاف‌پذیری، تورم و مقاومت حرارتی پلیمر دارد؟"}
+{"id":"poly_019","level":"intermediate","type":"comparison","category":"stereochemistry","prompt":"ایزوتاکتیک، سیندیوتاکتیک و آتاکتیک چه تفاوتی با یکدیگر دارند؟"}
+{"id":"poly_020","level":"intermediate","type":"effect_prediction","category":"additives","prompt":"افزودن نرم‌کننده چه اثری بر انعطاف‌پذیری و دمای انتقال شیشه‌ای پلیمر دارد؟"}
+{"id":"poly_021","level":"analytical","type":"comparison","category":"polyethylene","prompt":"پلی‌اتیلن سنگین HDPE و پلی‌اتیلن سبک LDPE را از نظر شاخه‌دار شدن، بلورینگی و چگالی مقایسه کن."}
+{"id":"poly_022","level":"analytical","type":"explanation","category":"mechanical_properties","prompt":"چرا پلی‌استایرن معمولی در دمای اتاق نسبتاً سخت و شکننده است؟ پاسخ را با ساختار زنجیر و Tg توضیح بده."}
+{"id":"poly_023","level":"analytical","type":"explanation","category":"thermosets","prompt":"چرا یک پلیمر ترموست هنگام گرم شدن ذوب نمی‌شود و در دمای بالا تخریب می‌شود؟"}
+{"id":"poly_024","level":"analytical","type":"error_correction","category":"thermal_behavior","prompt":"این عبارت را بررسی و اصلاح کن: در ترموپلاستیک‌ها هنگام گرم شدن پیوندهای اصلی زنجیر شکسته می‌شوند و هنگام سرد شدن دوباره تشکیل می‌شوند."}
+{"id":"poly_025","level":"analytical","type":"comparison","category":"morphology","prompt":"پلیمرهای آمورف و نیمه‌بلوری را از نظر شفافیت، جمع‌شدگی، چگالی و نفوذپذیری مقایسه کن."}
+{"id":"poly_026","level":"calculation","type":"numerical","category":"molecular_weight","prompt":"یک نمونه پلیمر شامل 2 زنجیر با وزن مولکولی 10000 و 3 زنجیر با وزن مولکولی 20000 گرم بر مول است. وزن مولکولی متوسط عددی Mn را محاسبه کن."}
+{"id":"poly_027","level":"calculation","type":"numerical","category":"molecular_weight","prompt":"یک نمونه پلیمر شامل 2 زنجیر با وزن مولکولی 10000 و 3 زنجیر با وزن مولکولی 20000 گرم بر مول است. وزن مولکولی متوسط وزنی Mw را محاسبه کن."}
+{"id":"poly_028","level":"calculation","type":"numerical","category":"molecular_weight","prompt":"اگر Mn برابر 50000 و Mw برابر 100000 گرم بر مول باشد، شاخص پراکندگی PDI را محاسبه و نتیجه را تفسیر کن."}
+{"id":"poly_029","level":"calculation","type":"numerical","category":"viscosity","prompt":"با استفاده از رابطه مارک–هووینک، اگر K برابر 0.0001 دسی‌لیتر بر گرم، a برابر 0.8 و وزن مولکولی 100000 گرم بر مول باشد، ویسکوزیته ذاتی را محاسبه کن."}
+{"id":"poly_030","level":"calculation","type":"numerical","category":"degree_of_polymerization","prompt":"اگر وزن مولکولی متوسط عددی یک پلیمر 56000 گرم بر مول و وزن مولکولی واحد تکرارشونده 28 گرم بر مول باشد، درجه پلیمریزاسیون متوسط عددی را محاسبه کن."}

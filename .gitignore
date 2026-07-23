@@ -39,4 +39,9 @@ Thumbs.db
 
 # IDE
 .vscode/
-.idea/
+.idea/results/archive/
+*:Zone.Identifier
+
+# Local evaluation archives
+/results/archive/
+*:Zone.Identifier
