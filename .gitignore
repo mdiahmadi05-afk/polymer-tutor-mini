@@ -45,3 +45,8 @@ Thumbs.db
 # Local evaluation archives
 /results/archive/
 *:Zone.Identifier
+
+# Local RAG books and generated indexes
+data/rag/source_pdfs/
+data/rag/processed/
+data/rag/index/
