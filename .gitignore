@@ -50,3 +50,12 @@ Thumbs.db
 data/rag/source_pdfs/
 data/rag/processed/
 data/rag/index/
+
+# Local AI models, generated datasets, and training outputs
+models/
+outputs/
+data/final/
+data/knowledge/
+data/pilot/
+data/qa/
+data/rag/source_pdfs/
